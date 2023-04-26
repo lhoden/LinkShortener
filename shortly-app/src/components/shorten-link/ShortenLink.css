@@ -1,0 +1,38 @@
+.result {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5em;
+    margin-top: 2em;
+    background-color: var(--accent-1);
+    width: 70%;
+}
+.result p {
+    color: var(--secondary-text);
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.result button {
+    background-color: var(--primary-button);
+    color: white;
+    font-size: 1.1em;
+    text-transform: none;
+    padding: 0.5em 2em 0.5em 2em;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+.result button:hover {
+    background-color: var(--primary-button-hover);
+}
+@media screen and (max-width:700px) {
+    .result {
+        flex-direction: column;
+        text-align:left;
+    }
+    .result button {
+        margin-bottom: 1em;
+    }
+}

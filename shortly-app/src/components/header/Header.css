@@ -1,0 +1,158 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 40px 100px 10px 100px;
+  padding-left: 14em;
+  background-color: var(--accent-1);
+  z-index: 1;
+}
+.logo {
+  position: relative;
+  font-weight: 700;
+  color: var(--primary-text);
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: none;
+  letter-spacing: 2px;
+}
+.header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header ul li {
+  position: relative;
+  list-style: none;
+}
+.header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--secondary-text);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.header ul li a:hover {
+  color: var(--primary-text);
+}
+.header .divider {
+  display: none;
+}
+.header button {
+  background-color: var(--primary-button);
+  margin: 1em 0 1em 0;
+  display: block;
+  font-size: 1em;
+  text-transform: none;
+  padding: 0.5em 2em 0.5em 2em;
+  font-weight: bold;
+  display: inline;
+}
+.header button:hover {
+  background-color: var(--primary-button-hover);
+}
+.login {
+  margin-left: 38%;
+}
+.navigation {
+  display: flex;
+  width: 100%;
+}
+.menuIcon {
+  padding: 0.5em 0 0 1.5em;
+  display: none;
+}
+@media screen and (max-width: 1600px) {
+  .login {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .header {
+    padding-left: 8em;
+    display: flex;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .login {
+    margin-left: 5%;
+  }
+  .header {
+    padding-left: 5em;
+    display: flex;
+  }
+}
+@media screen and (max-width:700px) {
+  .app {
+    text-align: center;
+  }
+  .header {
+    position: relative;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .header ul {
+    display: block;
+    background: white;
+    position: relative;
+    top: 25px;
+    right: 0;
+    z-index: 2;
+    margin-left: 0;
+    background-color: var(--primary-background);
+    text-align: center;
+    padding-left: 0;
+  }
+  .login {
+    margin-top: -6px;
+  }
+  .login li button {
+    margin-top: 0;
+    padding: 0.5em 6em;
+  }
+  .header ul li {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  .header ul li a {
+    color: var(--accent-1);
+  }
+  .header .divider {
+    display: block;
+    border-top: 1px solid var(--secondary-text);
+    width: 80%;
+  }
+  .menuIcon {
+    display: inline;
+    position: absolute;
+    margin-left: 18em;
+  }
+  .navigation {
+    background-color: var(--primary-background);
+    width: 78%;
+    padding-bottom: 25px;
+    border-radius: 4%;
+    margin-top: 2em;
+    display: block;
+  }
+}
+@media only screen and (max-width:600px) {
+  .header ul li {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+  }
+  .menuIcon {
+    margin-left: 47%;
+  }
+  .navigation {
+    display: block;
+  }
+}

@@ -1,0 +1,49 @@
+.shortenContainer {
+    background-color: var(--primary-background);
+    background-size: 100% 100%;
+    width: 80%;
+    height: 10em;
+    border-radius: 1em;
+    text-align: center;
+}
+.shortenContainer button {
+    background-color: var(--primary-button);
+    color: white;
+    font-size: 1.1em;
+    text-transform: none;
+    padding: 0.5em 2em 0.5em 2em;
+    font-weight: bold;
+    border-radius: 0.5em;
+}
+.shortenContainer button:hover {
+    background-color: var(--primary-button-hover);
+}
+.shortenContainer div {
+    display: inline-block;
+    margin-top: 3.3em;
+}
+.shortenBox {
+    margin: 0 1em 0 1em;
+    height: 3.5em;
+    width: 64em;
+    border-radius: 0.5em;
+    border-color: white;
+    color: var(--secondary-text);
+    font-weight: bold;
+    padding-left: 1em;
+}
+.shortenBox::placeholder {
+    color: var(--secondary-text);
+    font-weight: bold;
+    padding-left: 1em;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 1200px) {
+    .shortenContainer {
+        height: 14em !important;
+    }
+    .shortenBox {
+        width: 80% !important;
+        margin: 0 1em 2em 1em !important;
+    }
+}
